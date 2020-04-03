@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var settingsButton: UIBarButtonItem!
     
     
-
+    
     @objc func fetchNews() {
         
         DispatchQueue.global().async {
@@ -115,7 +115,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-            
+        
         SettingsViewController.closure = {
             self.fetchNews()
             self.tableView.scrollRectToVisible(CGRect(x: 0, y: 0, width: 10, height: 10), animated: true)
