@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95CF6BC22437A8A90065D15D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CF6BC12437A8A90065D15D /* SettingsViewController.swift */; };
 		95DE656B2435033900D4C125 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE656A2435033900D4C125 /* AppDelegate.swift */; };
 		95DE656D2435033900D4C125 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE656C2435033900D4C125 /* SceneDelegate.swift */; };
 		95DE656F2435033900D4C125 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE656E2435033900D4C125 /* ViewController.swift */; };
 		95DE65722435033900D4C125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95DE65702435033900D4C125 /* Main.storyboard */; };
 		95DE65742435034000D4C125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95DE65732435034000D4C125 /* Assets.xcassets */; };
 		95DE65772435034000D4C125 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95DE65752435034000D4C125 /* LaunchScreen.storyboard */; };
+		95DE657F24362D1000D4C125 /* GameInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE657E24362D1000D4C125 /* GameInfo.swift */; };
+		95DE6581243644F200D4C125 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE6580243644F200D4C125 /* InfoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		95CF6BC12437A8A90065D15D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		95DE65672435033900D4C125 /* GameNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DE656A2435033900D4C125 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95DE656C2435033900D4C125 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		95DE65732435034000D4C125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95DE65762435034000D4C125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95DE65782435034000D4C125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95DE657E24362D1000D4C125 /* GameInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInfo.swift; sourceTree = "<group>"; };
+		95DE6580243644F200D4C125 /* InfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				95DE65732435034000D4C125 /* Assets.xcassets */,
 				95DE65752435034000D4C125 /* LaunchScreen.storyboard */,
 				95DE65782435034000D4C125 /* Info.plist */,
+				95DE657E24362D1000D4C125 /* GameInfo.swift */,
+				95DE6580243644F200D4C125 /* InfoCell.swift */,
+				95CF6BC12437A8A90065D15D /* SettingsViewController.swift */,
 			);
 			path = GameNews;
 			sourceTree = "<group>";
@@ -141,6 +150,9 @@
 				95DE656F2435033900D4C125 /* ViewController.swift in Sources */,
 				95DE656B2435033900D4C125 /* AppDelegate.swift in Sources */,
 				95DE656D2435033900D4C125 /* SceneDelegate.swift in Sources */,
+				95DE657F24362D1000D4C125 /* GameInfo.swift in Sources */,
+				95DE6581243644F200D4C125 /* InfoCell.swift in Sources */,
+				95CF6BC22437A8A90065D15D /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +299,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 539DQNBLRW;
 				INFOPLIST_FILE = GameNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +307,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.itmo.GameNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +318,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 539DQNBLRW;
 				INFOPLIST_FILE = GameNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.itmo.GameNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

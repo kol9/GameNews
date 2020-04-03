@@ -14,6 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        let defaults = UserDefaults.standard
+        guard (defaults.object(forKey: "SavedArray") as? [String]) != nil else {
+            let arr = ["Half-Life: Alyx"]
+            defaults.set(arr, forKey: "SavedArray")
+            return true
+        }
+        
         // Override point for customization after application launch.
         return true
     }
